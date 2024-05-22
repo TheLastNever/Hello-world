@@ -17,7 +17,7 @@ namespace HelloWorld.Controllers
         [HttpGet(Name = "GetHelloWorld")]
         public object Get()
         {
-            return Ok("Hello World");
+            return Ok(System.Environment.GetEnvironmentVariable("hello"));
         }
 
     }
